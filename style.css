@@ -1,42 +1,46 @@
-/* INSTRUCTIONS
- *
- * 1) Keep the text inside .intro-content
- *    in the same place, but have the background
- *    extend from one side of the viewport
- *    to the other, no matter how wide or narrow
- *    the browser is.
- *
- * 2) Limit the maximum width of the text in the
- *    bottom area.
- *
- * You may modify the HTML if needed
- * (you probably should for this challenge)
- *
- */
-
-* {
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    
 }
-
-body {
-  margin: 0;
-  font-family: sans-serif;
+body{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
-.container {
-  width: 80%;
-  max-width: 750px;
-  margin: 0 auto;
-  background: #23424a;
-  color: white;
-  padding: 50px 0;
+.clock{
+    border: 2px solid blue;
+    display: flex;
+    /* width: 90%; */
+    
+    
 }
-
-.intro-content {
-  width: 50%;
+.clock div{
+    /* background-color: pink; */
+    margin: 5px;
 }
-
-.box1{
-  max-width: 758px;
-  margin: auto;
+.clock span{
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
+    height: 80px;
+    width: 100px;
+    display: flex;
+    background: slateblue;
+    color: white;
+    font-size: 30px;
+}
+/* .clock #ampm{
+    bottom: 0;
+    position: absolute;
+} */
+.clock .text{
+    height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: blueviolet;
 }
